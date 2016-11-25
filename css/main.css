@@ -28,7 +28,7 @@ figure {
 }
 
 figure img {
-  max-height: 220px;
+  max-height: 210px;
 }
 
 footer a {
@@ -50,6 +50,15 @@ figure figcaption {
 p {
   padding-top: .75em;
   padding-bottom: .25em;
+}
+
+.last {
+  padding: 0;
+}
+
+.snd-last {
+  padding-top: .75em;
+  padding-bottom: .5em;
 }
 
 main {
