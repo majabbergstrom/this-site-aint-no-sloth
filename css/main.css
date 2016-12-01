@@ -16,19 +16,22 @@ img {
 }
 
 .img-3 {
-  padding: .25em 0;
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
+  padding: .22em 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  max-height: 223px;
 }
 
 figure {
-  padding: .25em 0;
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
+  padding: .22em 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-bottom: 1.28em;
 }
 
 figure img {
-  max-height: 210px;
+  height: 213px;
+  overflow-x: hidden;
 }
 
 footer a {
@@ -39,11 +42,17 @@ h1,
 p,
 figcaption,
 footer {
-  margin: .6em;
+  margin: .7em;
+}
+
+h1 {
+  margin-top: .4em;
+  margin-left: .4em;
+  text-shadow: 2px 2px #000;
 }
 
 figure figcaption {
-  margin-top: .2em;
+  margin-top: .1em;
   margin-bottom: .2em;
 }
 
@@ -52,30 +61,178 @@ p {
   padding-bottom: .25em;
 }
 
+.first {
+  padding: 0;
+  margin-top: 1.2em;
+}
+
+.second {
+  margin-top: -.1em;
+  padding-bottom: .6em;
+}
+
 .last {
+  margin-top: .5em;
   padding: 0;
 }
 
 .snd-last {
   padding-top: .75em;
-  padding-bottom: .5em;
+  padding-bottom: .6em;
 }
 
 main {
-  margin-top: .7em;
+  margin-top: .6em;
 }
 
 .borders {
-  padding: .25em 0;
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
+  padding: .2em 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .masthead {
   color: #fff;
-  padding-bottom: 13em;
-  background-image: linear-gradient(to bottom, rgba(28, 14, 0, .8) 5%, rgba(28, 14, 0, 0) 30%), url("../images/sloth-1.jpg");
+  padding-bottom: 13.3em;
+  background-image: linear-gradient(to bottom, rgba(28, 14, 0, .8) 3%, rgba(28, 14, 0, 0) 30%), url("../images/sloth-1.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, bottom center;
   background-size: 320px auto, 320px auto;
+}
+
+footer {
+  margin-top: .4em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .masthead {
+    background-size: 400px auto, 400px auto;
+    padding-bottom: 16.7em;
+  }
+
+  p {
+    margin-right: .5em;
+  }
+
+  .first {
+    margin-top: 1.3em;
+  }
+
+  .second {
+    padding-top: .7em;
+  }
+
+  figure img {
+    height: 16.6em;
+  }
+
+  .img-3 {
+    max-height: 17.2em;
+  }
+
+  figure {
+    margin-bottom: 1.33em;
+  }
+
+  .snd-last {
+    padding-top: .65em;
+  }
+
+}
+
+@media only screen and (min-width: 30em) {
+
+  .masthead {
+    background-size: 608px auto, 608px auto;
+    padding-bottom: 23em;
+  }
+
+  .first {
+    margin-top: 1.5em;
+  }
+
+  figure img {
+    height: 23.05em;
+  }
+
+  figure figcaption {
+    margin-bottom: .3em;
+  }
+
+  figure {
+    margin-bottom: 1.5em;
+  }
+
+  .img-3 {
+    max-height: 24.5em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    background-image: url("../images/sloth-bg.svg");
+    background-size: 48px;
+    background-repeat: repeat;
+    background-color: #bea586;
+    background-position: center;
+  }
+
+  main {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 0;
+    padding-top: .7em;
+    margin-left: 13.5%;
+  }
+
+  .masthead {
+    padding-bottom: 24em;
+    background-size: 700px auto;
+    background-position: top center;
+  }
+
+  .first {
+    margin-right: 1.5em;
+    margin-bottom: .8em;
+  }
+
+  figure img {
+    height: 24.2em;
+  }
+
+  .snd-last {
+    padding-bottom: .75em;
+  }
+
+  footer {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 0;
+    padding: .5em 0 .75em;
+    margin-left: 13.5%;
+  }
+
+  footer a {
+    margin-left: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  main,
+  footer {
+    max-width: 750px;
+    margin-left: 24%;
+  }
+
+  .masthead {
+    background-size: 800px auto;
+    padding-bottom: 24em;
+    background-position: center center;
+  }
+
 }
